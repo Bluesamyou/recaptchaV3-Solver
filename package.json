@@ -1,0 +1,20 @@
+{
+  "name": "v3-harvester",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "",
+  "license": "",
+  "devDependencies": {
+    "electron": "^3.0.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.17.1",
+    "moment": "^2.23.0",
+    "request": "^2.88.0"
+  }
+}

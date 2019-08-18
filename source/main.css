@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600');
+body {
+    background-image: url("https://i.imgur.com/vWrfz0G.png");
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+}
+p {
+    font-weight: 375;
+    font-size: 17px;
+    color: white;
+    opacity: 0.5;
+}
+header {
+    color: white;
+    opacity: 0.5;
+    height: 30px;
+    padding-top: 13px;
+    -webkit-app-region: drag;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 500;
+    background-color: rgba(61, 40, 88, 0.267);
+    margin-left: -10px;
+    margin-top: -10px;
+    width: 462px;
+    top: 0;
+    left: 0;			
+}
+#downloadBtn {
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+
+    background: #5a02ff;
+    background: linear-gradient(135deg, #5a02ff 0%, #8200ff 100%);
+    box-shadow: 0 8px 20px -10px #7367f0;
+
+    width: 250px;
+    height: 60px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 2;
+
+    transform-origin: 50% 50%;
+    transition: all 0.4s ease 0.2s;
+
+    margin-top: 200px;
+    margin-left: 100px;
+
+}
+#downloadBtn.checked {
+    width: 70px;
+    height: 70px;
+    border-radius: 10000px;
+    padding: 27.9px 27.5px 27.5px 27.5px;
+    margin-left: 175px;
+}
+#downloadBtn.bounce {
+    animation: bounce 0.5s ease-in-out;
+
+}
+@keyframes bounce {
+    25% {
+        transform: scale(1.15);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    75% {
+        transform: scale(1.125);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+#buttonText {
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    opacity: 1;
+    visibility: visible;
+    
+    transition: opacity 0.2s ease-in, visibility 0.2s ease-in;
+}
+#buttonText.fadeOut {
+    opacity: 0;
+    visibility: hidden;
+    
+    
+}
+#buttonText.gone {
+    display: none;
+    margin-left: 95px;
+}
+#checkMark {
+    width: 15px;
+    display: none;
+
+    stroke-dasharray: 27;
+    stroke-dashoffset: 27;
+    margin-left: 95px;
+}
+#checkMark.checked {
+    display: block;
+    animation: dash 0.3s ease-in-out forwards 0.3s;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+@keyframes dash {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+.capCount {
+    text-align: center;
+}
+#background.play {
+    opacity: 0;
+    transform: scale(2);
+}
+.grecaptcha-badge {
+    bottom: 25px !important;
+    opacity: 0 !important;
+}
+.rc-anchor-light {
+    background: black !important;
+    color: black !important;
+}
+.grecaptcha-badge {
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+}
+.signout {
+    opacity: 0;
+    z-index: 1;
+    color: rgba(255, 255, 255, 0);
+    opacity: 0.60;
+    margin-top: 260px;
+    margin-left: 180px;
+    background-color: rgba(255, 255, 255, 0);
+    transition: 0.7s;
+    border: 0;
+}
+.google-gif {
+    transition: 5s;
+    opacity: 0.60;
+    position: relative;
+    width: 50px;
+    z-index: -1;
+    margin-left: -80px;
+    margin-bottom: -10px;
+}
